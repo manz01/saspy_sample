@@ -153,6 +153,37 @@ jupyter notebook --no-browser --ip=0.0.0.0
 Access from browser via http://localhost:8888 on Windows side.
 
 
-4. **Running SAS** in jupter Notebook
+## **Running SAS** in jupter Notebook
+You can now run SAS code directly in Jupyter notebooks using SASPy’s magic commands. Below are two key code blocks that complete the integration.
 
+### 🧱 **Block 1** : Initialize SASPy and Load Magic Extension
+```python
+import os
+import saspy
+
+# Get the path to your personal SASPy configuration
+cfg_path = os.environ.get("SASPY_CFG")
+
+# Establish a connection to SAS using the ODA profile
+sas = saspy.SASsession(cfgfile=cfg_path)
+
+# Load SAS magic commands into the notebook environment
+from saspy.sas_magic import SASMagic
+SASMagic.saslib = sas
+%load_ext saspy.sas_magic
+```
+
+#### 💡 Explanation:
+* Retrieves the SASPY_CFG environment variable set in .bashrc.
+* Starts a SAS session using the oda configuration.
+* Loads the %SAS magic command so you can run native SAS code directly in notebook cells.
+
+### 🧾 **Block 2**: Run Native SAS Code Using %SAS Magic
+#### 💡 Explanation:
+* The %%SAS cell magic tells Jupyter to treat the entire cell as SAS code.
+* This example runs a simple PROC PRINT on the sashelp.cars dataset, showing the first 6 rows.
+
+#### 📸 Output Preview
+* Here’s an example screenshot of SAS output rendered directly in the notebook
 ![Notebook SASPy Test](markdown_images/notebook-saspy-test.jpg)
+
