@@ -2,7 +2,6 @@
 
 **Author:  Manzar Ahmed**</br>
 **Date: June 2025**
-![](https://avatars.githubusercontent.com/u/22481437?v=4 ) 
 
 ## ✨ Introduction
 
