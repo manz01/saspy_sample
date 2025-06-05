@@ -2,14 +2,21 @@
 
 **Author:  Manzar Ahmed**</br>
 **Date: June 2025**
+![](https://avatars.githubusercontent.com/u/22481437?v=4 ) 
 
 ## ✨ Introduction
 
-If you’re working in a Linux-native Python environment and need access to SAS — especially using the **free cloud-based SAS OnDemand for Academics (ODA)** — integrating it with **Windows Subsystem for Linux (WSL)** using **SASPy** is an incredibly powerful setup.
+Hey Everyone!
 
-**SAS OnDemand for Academics** is a *free version of SAS* provided by SAS Institute for learning and teaching purposes. It allows you to run full-featured SAS in the cloud without requiring a paid license or local installation of the SAS system — making it ideal for students, educators, and even professionals experimenting with SAS in open-source environments.
+I've worked as a SAS engineer for several years, but more recently, many of the projects I'm involved in have been migrating away from SAS to modern tools like **Python**, **dbt**, **Snowflake**, and **Databricks**.
 
-This guide documents the **exact steps I followed** to get SASPy working inside WSL and connected to SAS OnDemand. Once integrated, you can use Python, Jupyter, and all your local Linux tools to interact with remote SAS sessions — giving you the best of both worlds: **open-source flexibility and enterprise-grade analytics**.
+In a recent project, we migrated SAS code to **DuckDB**, and later into **Snowflake**. During this process, I discovered the **SASPy** Python library, which lets you run SAS code directly from Python and integrates nicely with **Visual Studio Code (VS Code)**.
+
+I enjoy building code samples in my personal sandbox, which runs on **Ubuntu via Windows Subsystem for Linux (WSL)**. In this setup, I managed to configure SASPy to work with the **free cloud-based SAS OnDemand for Academics (ODA)**.
+
+**SAS OnDemand for Academics (ODA)** is a free, cloud-based version of SAS offered by the SAS Institute for learning and teaching. It provides full-featured SAS capabilities in the cloud without requiring a local installation or paid license—making it ideal for students, educators, and professionals exploring SAS in open-source environments.
+
+This guide documents the exact steps I followed to set up SASPy inside WSL and connect it to SAS OnDemand. Once integrated, you can leverage Python, Jupyter, and your local Linux tools to interact with remote SAS sessions—offering the best of both worlds: open-source flexibility and enterprise-grade analytics.
 
 For official documentation and additional guidance, refer to the SAS support page:  
 🔗 [SASPy with SAS OnDemand for Academics – Official Guide](https://support.sas.com/ondemand/saspy.html)
