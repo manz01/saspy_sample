@@ -18,8 +18,7 @@ Date        Programmer                Description
 import os
 from utils.sas_setup import start_sas_session, print_sas_log, sas_output
 
-output_path = '~/reports'
-output_path = os.path.expanduser(output_path)
+output_path = os.path.expanduser('~/reports')
 
 sas = start_sas_session()
 
