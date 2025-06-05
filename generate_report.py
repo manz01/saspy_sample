@@ -1,14 +1,19 @@
 """
-Author:       Manzar Ahmed
-Create Date:  2025-05-18
-Project:      sas samples
-Description:  generate a sample report
-----------------------------------------------------------------------------
-Version Control
-----------------------------------------------------------------------------
-#    Date      Name          Description
-1.0  20250518  Manzar Ahmed  Initial
-----------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+Program:        generate_report.py
+Project:        saspy_sample
+Description:    generate a sample report
+Input(s):       sashelp.class
+Output(s):      html report in ~/reports/class_report.html
+Author:         Manzar Ahmed
+First Created:  05-Jun-2025
+-------------------------------------------------------------------------------------------------
+Program history:
+-------------------------------------------------------------------------------------------------
+Date        Programmer                Description
+----------  ------------------------  -----------------------------------------------------------
+2025-06-05  Manzar Ahmed              v0.01/Initial version
+-------------------------------------------------------------------------------------------------
 """
 import os
 from utils.sas_setup import start_sas_session, print_sas_log, sas_output
