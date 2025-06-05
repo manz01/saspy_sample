@@ -179,6 +179,11 @@ SASMagic.saslib = sas
 * Loads the %SAS magic command so you can run native SAS code directly in notebook cells.
 
 ### 🧾 **Block 2**: Run Native SAS Code Using %SAS Magic
+```python
+%%SAS
+proc print data=sashelp.cars(obs=6);
+run;
+```
 #### 💡 Explanation:
 * The %%SAS cell magic tells Jupyter to treat the entire cell as SAS code.
 * This example runs a simple PROC PRINT on the sashelp.cars dataset, showing the first 6 rows.
