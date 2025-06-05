@@ -1,5 +1,7 @@
 # Bridging SAS and Python in Ubuntu via Windows Subsystem for Linux (WSL) with SASPy
 
+![](markdown_images/python_sas.png)
+
 **Author:  Manzar Ahmed**</br>
 **Date: June 2025**
 
