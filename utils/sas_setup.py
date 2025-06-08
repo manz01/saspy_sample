@@ -1,18 +1,39 @@
 """
--------------------------------------------------------------------------------------------------
-Program:        sas_setup.py
-Description:    utils code
-Author:         Manzar Ahmed
-First Created:  05-Jun-2025
--------------------------------------------------------------------------------------------------
-Program history:
--------------------------------------------------------------------------------------------------
-Date        Programmer                Description
-----------  ------------------------  -----------------------------------------------------------
-2025-06-05  Manzar Ahmed              v0.01/Initial version
--------------------------------------------------------------------------------------------------
-"""
+sas_setup.py
 
+Utility functions for initializing SASPy sessions and handling SAS outputs.
+
+Author: Manzar Ahmed
+Created: 05-Jun-2025
+License: MIT (See LICENSE file for full text)
+"""
+__version__ = '0.0.1'
+__updated__ = '2025-06-05'
+__author__ = 'Manzar Ahmed'
+__maintainer__ = ['Manzar Ahmed']
+__email__ = 'manzar@example.com'
+__license__ = 'MIT'
+__docformat__ = 'google'
+__license_text__ = """
+MIT License
+
+Copyright (c) 2025 Manzar Ahmed
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+"""
+# -*- coding: utf-8 -*-
 import os
 import saspy
 
